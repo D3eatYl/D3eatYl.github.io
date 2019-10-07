@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | HelloWorld</title>
+  <title>Openresty学习笔记（一） | HelloWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Openresty学习笔记（一）序OpenResty（也称为 ngx_openresty）是一个全功能的 Web 应用服务器。它打包了标准的 Nginx 核心，很多的常用的第三方模块，以及它们的大多数依赖项。 这里我只写了部分知识，很多东西没有写，如有不明白的请自行百度或看下面的链接，见谅了 OpenResty最佳实践 Lua教程|菜鸟教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/07/07/hello-world/index.html">
+<meta property="og:title" content="Openresty学习笔记（一）">
+<meta property="og:url" content="http://yoursite.com/2019/10/06/Openresty_1/index.html">
 <meta property="og:site_name" content="HelloWorld">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Openresty学习笔记（一）序OpenResty（也称为 ngx_openresty）是一个全功能的 Web 应用服务器。它打包了标准的 Nginx 核心，很多的常用的第三方模块，以及它们的大多数依赖项。 这里我只写了部分知识，很多东西没有写，如有不明白的请自行百度或看下面的链接，见谅了 OpenResty最佳实践 Lua教程|菜鸟教程">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-07T00:40:03.659Z">
+<meta property="og:updated_time" content="2019-10-07T10:25:02.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Openresty学习笔记（一）">
+<meta name="twitter:description" content="Openresty学习笔记（一）序OpenResty（也称为 ngx_openresty）是一个全功能的 Web 应用服务器。它打包了标准的 Nginx 核心，很多的常用的第三方模块，以及它们的大多数依赖项。 这里我只写了部分知识，很多东西没有写，如有不明白的请自行百度或看下面的链接，见谅了 OpenResty最佳实践 Lua教程|菜鸟教程">
   
     <link rel="alternative" href="/atom.xml" title="HelloWorld" type="application/atom+xml">
   
@@ -163,39 +163,149 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Openresty_1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Openresty学习笔记（一）
     </h1>
   
 
         
-        <a href="/2019/07/07/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-07T00:40:03.659Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-07</time>
+        <a href="/2019/10/06/Openresty_1/" class="archive-article-date">
+  	<time datetime="2019-10-06T07:10:38.389Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h3 id="Openresty学习笔记（一）"><a href="#Openresty学习笔记（一）" class="headerlink" title="Openresty学习笔记（一）"></a>Openresty学习笔记（一）</h3><h3 id="序"><a href="#序" class="headerlink" title="序"></a>序</h3><p>OpenResty（也称为 ngx_openresty）是一个全功能的 Web 应用服务器。它打包了标准的 Nginx 核心，很多的常用的第三方模块，以及它们的大多数依赖项。</p>
+<p>这里我只写了部分知识，很多东西没有写，如有不明白的请自行百度或看下面的链接，见谅了</p>
+<p><a href="https://legacy.gitbook.com/book/moonbingbing/openresty-best-practices" target="_blank" rel="noopener">OpenResty最佳实践</a></p>
+<p><a href="https://www.runoob.com/lua/lua-tutorial.html" target="_blank" rel="noopener">Lua教程|菜鸟教程</a></p>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Lua基础"><a href="#Lua基础" class="headerlink" title="Lua基础"></a>Lua基础</h3><p>Lua 是一个小巧的脚本语言。其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。Lua 由标准 C 编写而成，几乎在所有操作系统和平台上都可以编译、运行。Lua 脚本可以很容易的被 C/C++ 代码调用，也可以反过来调用 C/C++ 的函数，这使得 Lua 在应用程序中可以被广泛应用。</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><p>Lua有8个基本类型 ： </p>
+<ul>
+<li>nil ： 空，表示一个无效值（在条件表达式中相当于false）</li>
+<li>boolean ： 布尔型</li>
+<li>number ： 表示双精度类型的实浮点数</li>
+<li>string ： 字符串</li>
+<li>function ： 由C或Lua编写的函数</li>
+<li>userdata ： 表示任意存储在变量中的C数据结构</li>
+<li>thread ： 表示执行的独立线路，用于执行协同程序</li>
+<li>table ： 表（table）其实是一个“关联数组”，数组的索引可以是数字、字符串或表类型。</li>
+</ul>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="string">"Hello, world ! "</span>))			<span class="comment">---&gt; string</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="literal">nil</span>))						<span class="comment">---&gt; nil</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="built_in">print</span>))						<span class="comment">---&gt; function</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>Lua变量有三种类型：全局变量、局部变量、表中的域</p>
+<p>Lua中的变量全是全局变量，哪怕在语句块或是函数里，除非用local显式声明为局部变量</p>
+<p>局部变量的作用域为从声明位置开始到所在语句块结束</p>
+<p>变量的默认值均为nil</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span>						<span class="comment">---&gt;全局变量</span></span><br><span class="line"><span class="keyword">local</span> b = <span class="number">5</span>					<span class="comment">---&gt;局部变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">()</span></span></span><br><span class="line">	c = <span class="number">5</span>					<span class="comment">---&gt;全局变量</span></span><br><span class="line">	<span class="keyword">local</span> d = <span class="number">5</span>				<span class="comment">---&gt;局部变量</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h5 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a, b = 10, 2*x					---&gt; a = 10; b = 2*x</span><br><span class="line"></span><br><span class="line">a, b, c = 0, 1					</span><br><span class="line">print(a, b, c)					---&gt; 0, 1, nil</span><br><span class="line"></span><br><span class="line">a, b, c = 0, 0, 0</span><br><span class="line">print(a, b, c)					---&gt; 0, 0, 0</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h5 id="while"><a href="#while" class="headerlink" title="while"></a>while</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">whi</span><span class="params">()</span></span></span><br><span class="line">    <span class="keyword">local</span> a = <span class="number">10</span></span><br><span class="line">    <span class="keyword">while</span>(a&gt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">        a = a - <span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(a)</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="数值for循环"><a href="#数值for循环" class="headerlink" title="数值for循环"></a>数值for循环</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> var = exp1, exp2, exp3 <span class="keyword">do</span></span><br><span class="line">    &lt;someting&gt;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>var从exp1变化到exp2，每次变化以exp3为步长递增var，并执行一次<strong>“someting”</strong>。exp是可选的，如果不指定，默认为1</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">(x)</span></span></span><br><span class="line">	<span class="built_in">print</span>(<span class="string">"function"</span>)</span><br><span class="line">    <span class="keyword">return</span> x*<span class="number">2</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">for</span> i = <span class="number">1</span>, func(<span class="number">5</span>) <span class="keyword">do</span> <span class="built_in">print</span>(i)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>执行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+
+<h5 id="泛型for循环"><a href="#泛型for循环" class="headerlink" title="泛型for循环"></a>泛型for循环</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">days = &#123;<span class="string">"Sunday"</span>, <span class="string">"Monday"</span>, <span class="string">"Tuesday"</span>, <span class="string">"Wednesday"</span>, <span class="string">"Thursday"</span>, <span class="string">"Friday"</span>, <span class="string">"Saturday"</span>&#125;</span><br><span class="line"><span class="keyword">for</span> i, v <span class="keyword">in</span> <span class="built_in">ipairs</span>(days) <span class="keyword">do</span> <span class="built_in">print</span>(v) <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>执行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Sunday</span><br><span class="line">Monday</span><br><span class="line">Tuesday</span><br><span class="line">Wednesday</span><br><span class="line">Thursday</span><br><span class="line">Friday</span><br><span class="line">Saturday</span><br></pre></td></tr></table></figure>
+
+<h5 id="repeat…until"><a href="#repeat…until" class="headerlink" title="repeat…until"></a>repeat…until</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">()</span></span></span><br><span class="line">    <span class="keyword">local</span> a = <span class="number">1</span></span><br><span class="line">    <span class="keyword">repeat</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"a: "</span>, a)</span><br><span class="line">        a = a + <span class="number">1</span></span><br><span class="line">    <span class="keyword">until</span>(a &gt; <span class="number">5</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a: 	1</span><br><span class="line">a: 	2</span><br><span class="line">a: 	3</span><br><span class="line">a: 	4</span><br><span class="line">a: 	5</span><br></pre></td></tr></table></figure>
+
+<h4 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h4><p>Lua认为false和nil为假，true和非nil为真</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="number">0</span>)					<span class="comment">---&gt; true</span></span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">	<span class="built_in">print</span>(<span class="string">"true"</span>)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">(arg)</span></span></span><br><span class="line">	&lt;something&gt;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>上面定义了一个全局函数，名为func，全局函数本质上就是函数类型的值赋给了一个全局变量，即等价于</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func = <span class="function"><span class="keyword">function</span> <span class="params">(arg)</span></span></span><br><span class="line">	&lt;something&gt;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>由于全局变量一般会污染全局名字空间，同时也有性能损耗（即查询全局环境表的开销），因此应当尽量使用”局部函数“</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> <span class="function"><span class="keyword">function</span> <span class="title">func</span><span class="params">(arg)</span></span></span><br><span class="line">	&lt;something&gt;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>Lua 还支持通过名称来指定实参，这时候要把所有的实参组织到一个 table 中，并将这个 table 作为唯一的实参传给函数。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> <span class="function"><span class="keyword">function</span> <span class="title">rectangle</span><span class="params">(arg)</span></span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"arg.height: "</span>, <span class="built_in">arg</span>.height)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"arg.width: "</span>, <span class="built_in">arg</span>.width)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"area: "</span>, <span class="built_in">arg</span>.height * <span class="built_in">arg</span>.width)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">rectangle(&#123;height = <span class="number">5</span>, width = <span class="number">10</span>&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arg.height: 	5</span><br><span class="line">arg.width: 	10</span><br><span class="line">area: 	50</span><br></pre></td></tr></table></figure>
+
+<h4 id="全动态函数调用"><a href="#全动态函数调用" class="headerlink" title="全动态函数调用"></a>全动态函数调用</h4><p>调用回调函数，并把一个数组参数作为回调函数的参数。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> args = &#123;...&#125; <span class="keyword">or</span> &#123;&#125;</span><br><span class="line">method_name(<span class="built_in">unpack</span>(args, <span class="number">1</span>, <span class="built_in">table</span>.<span class="built_in">maxn</span>(args)))</span><br></pre></td></tr></table></figure>
+
+<p>如果你的实参 table 中确定没有 nil 空洞，则可以简化为</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">method_name(<span class="built_in">unpack</span>(args))</span><br></pre></td></tr></table></figure>
+
+<p><code>unpack</code> 内建函数还不能为 LuaJIT 所 JIT 编译，因此这种用法总是会被解释执行。对性能敏感的代码路径应避免这种用法。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> <span class="function"><span class="keyword">function</span> <span class="title">attack</span><span class="params">(target)</span></span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"Attacking"</span>, target, <span class="string">""</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">local</span> <span class="function"><span class="keyword">function</span> <span class="title">defense</span><span class="params">(attacker)</span></span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"Defense from"</span>, attacker, <span class="string">"'s attacks"</span>)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">local</span> <span class="function"><span class="keyword">function</span> <span class="title">action</span><span class="params">(method, ...)</span></span></span><br><span class="line">    <span class="keyword">local</span> args = &#123;...&#125; <span class="keyword">or</span> &#123;&#125;</span><br><span class="line">    method(<span class="built_in">unpack</span>(args, <span class="number">1</span>, <span class="built_in">table</span>.<span class="built_in">maxn</span>(args)))</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">action(attack, <span class="string">"palyer"</span>)</span><br><span class="line">action(defense, <span class="string">"monster"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Attacking	palyer</span><br><span class="line">Defense from	monster	&apos;s attacks</span><br></pre></td></tr></table></figure>
+
+<h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>Nginx (“engine x”) 是一个高性能的 HTTP 和反向代理服务器，也是一个 IMAP/POP3/SMTP 代理服务器。由于 Nginx 使用基于事件驱动的架构，能够并发处理百万级别的 TCP 连接，高度模块化的设计和自由的许可证使得扩展 Nginx 功能的第三方模块层出不穷。因此其作为 Web 服务器被广泛应用到大流量的网站上。</p>
+<h4 id="Nginx特点"><a href="#Nginx特点" class="headerlink" title="Nginx特点"></a>Nginx特点</h4><ol>
+<li>处理相应请求很快</li>
+<li>高并发连接</li>
+<li>低的内存消耗</li>
+<li>具有很高的可靠性</li>
+<li>高扩展性</li>
+<li>热部署</li>
+<li>自由的BSD许可协议</li>
+</ol>
+<h4 id="localtion匹配规则"><a href="#localtion匹配规则" class="headerlink" title="localtion匹配规则"></a>localtion匹配规则</h4><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>location = /uri</td>
+<td>= 表示精确匹配，只有完全匹配上才能生效</td>
+</tr>
+<tr>
+<td>location ^~ /uri</td>
+<td>^~ 开头对URL路径进行前缀匹配，并且在正则之前。</td>
+</tr>
+<tr>
+<td>location ~ pattern</td>
+<td>开头表示区分大小写的正则匹配</td>
+</tr>
+<tr>
+<td>location ~* pattern</td>
+<td>开头表示不区分大小写的正则匹配</td>
+</tr>
+<tr>
+<td>location /uri</td>
+<td>不带任何修饰符，也表示前缀匹配，但是在正则匹配之后</td>
+</tr>
+<tr>
+<td>location /</td>
+<td>通用匹配，任何未匹配到其它location的请求都会匹配到，相当于switch中的default</td>
+</tr>
+</tbody></table>
+<p>前缀匹配时，Nginx 不对 url 做编码，因此请求为 <code>/static/20%/aa</code>，可以被规则 <code>^~ /static/ /aa</code> 匹配到（注意是空格）</p>
+<h3 id="Openresty"><a href="#Openresty" class="headerlink" title="Openresty"></a>Openresty</h3><p>续…</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://legacy.gitbook.com/book/moonbingbing/openresty-best-practices" target="_blank" rel="noopener">OpenResty最佳实践</a></p>
+<p>[Lua教程|菜鸟教程][<a href="https://www.runoob.com/lua/lua-tutorial.html]" target="_blank" rel="noopener">https://www.runoob.com/lua/lua-tutorial.html]</a></p>
 
       
 
@@ -254,7 +364,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/07/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/06/Openresty_1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -266,20 +376,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2019/10/06/Openresty/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Openresty学习笔记
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
